@@ -146,11 +146,11 @@ class Lambdasian {
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
 class Instructor extends Lambdasian {
-  constructor(prop) {
-    this.specialty = prop.specialty;
-    this.favLanguage = prop.favLanguage;
-    this.catchPhrase = prop.catchPhrase;
-    super(prop.object);
+  constructor(properties, specialty, favLanguage, catchPhrase){
+    super(name, age, location);
+    this.specialty = properties.specialty;
+    this.favLanguage = properties.favLanguage;
+    this.catchPhrase = properties.catchPhrase; 
   }
 
   demo(topic) {
@@ -176,8 +176,16 @@ class Instructor extends Lambdasian {
         + `PRAssignment` a method that receives a subject as an argument and returns `student.name has submitted a PR for {subject}`
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
-class Student {
+class Student extends Lambdasian {
+  constructor(InstructorAttribs, previousBackground, className, favSubjects) {
+    super(InstructorAttribs.);
 
+    this.previousBackground = previousBackground;
+    this.className = className;
+    this.favSubject = favSubjects;
+
+
+  }
 }
 
 /*
